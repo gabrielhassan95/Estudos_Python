@@ -5,6 +5,7 @@ menu = """
 [e] Extrato
 [q] Sair
 
+
 => """
 
 saldo = 0

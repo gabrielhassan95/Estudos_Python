@@ -129,7 +129,7 @@ class Historico:
             {
                 "tipo": transacao.__class__.__name__,
                 "valor": transacao.valor,
-                
+                "data": datetime.now().strftime("%d-%m-%Y %H:%M"),
             }
         )
 
@@ -264,7 +264,8 @@ def exibir_extrato(clientes):
     print(extrato)
     print(f"\nSaldo:\n\tR$ {conta.saldo:.2f}")
     print("==========================================")
-
+    print(datetime.now())
+    
 
 def criar_cliente(clientes):
     cpf = input("Informe o CPF (somente número): ")
